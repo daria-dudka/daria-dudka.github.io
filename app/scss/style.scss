@@ -1,0 +1,44 @@
+@import 'mixins';
+@import 'vars';
+@import 'fonts';
+@import 'global';
+@import 'svg';
+
+.header {
+  width: 100%;
+  line-height: 50px;
+  background-color: rgba(42, 42, 42, 0.5);
+  font-size: 18px;
+  padding: 5px 0;
+  color: #fff;
+  position: fixed;
+  z-index: 10;
+ }
+ .menu {
+  &__list {
+   display: flex;
+   justify-content: center;
+   text-transform: uppercase;
+  }
+  &__list-item {
+   list-style: none;
+  }
+  &__list-link {
+   text-decoration: none;
+   padding: 10px 16px;
+   color: #fff;
+   &:hover {
+    color: rgb(219, 105, 12);
+    text-shadow: 0 0 3px rgba(0,0,0,.2);
+    transition: .20s ease-in-out;
+   }
+  }
+ }
+ .banner {
+  background-image: url(../images/banner-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+@import'media';
